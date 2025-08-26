@@ -6,8 +6,68 @@
     <title>Emergency-Hotline</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"/>
 </head>
-<body>
-    
+<body class=>
+    <nav class="flex h-24 justify-between items-center mx-16 max-sm:m-0 max-sm:flex-col">
+        <div class="flex justify-between items-center w-48 h-12 max-sm:my-2">
+            <img class="w-1/4" src="./assets/logo.png" alt="bangladesh-logo">
+            <h3 class="text-[#006747] text-xl font-bold">Emergency Service</h3>
+        </div>
+        <div class="flex justify-between w-96 h-12 max-sm:w-80">
+            <div class="flex justify-center items-center rounded-4xl w-28 bg-[#cdf0d5] max-sm:mr-1">
+                <h6 id="love-icon" class="font-bold">0</h6>
+                <img class="w-8 h-8" src="./assets/heart.png" alt="heart">
+            </div>
+            <div class="flex justify-center items-center rounded-4xl w-28 bg-[#cdf0d5] max-sm:mr-1">
+                <h6 id="coins" class="font-bold">100</h6>
+                <img class="w-8 h-8" src="./assets/coin.png" alt="coins">
+            </div>
+            <div class="flex justify-center items-center rounded-4xl w-28 bg-[#00A63E]">
+                <h6 id="number-of-copies" class="text-white"><span>2</span>Copy</h6>
+            </div>
+        </div>
+    </nav>
+    <div class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] h-80">
+        <div class="pt-10">
+            <div class="mx-auto">
+                <img class="w-24 h-24 mx-auto" src="./assets/logo.png" alt="logo">
+            </div>
+            <br>
+            <div class="text-center text-white">
+                <h1 class="font-bold text-5xl">Emergency Service Directory</h1>
+                <br>
+                <p class="font-semibold text-xl">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+            </div>
+        </div>
+    </div>
+    <div class="bg-green-50">
+        <div class="grid grid-cols-4 gap-6 p-8">
+            <div class="border-2 border-amber-500 h-80 bg-white rounded-xl">
+                <div class="p-4">
+                    <img src="./assets/emergency.png" alt="emergency">
+                    <h1 class="font-bold text-2xl">National Emergency Number</h1>
+                    <h6 class="font-normal text-[18]">National Emergency</h6>
+                    <br>
+                    <h1 class="font-bold text-3xl">999</h1>
+                    <h6 class="bg-[#F2F2F2] w-14 h-9 text-center py-1 rounded-3xl">All</h6>
+                    <button class="w-1/3 h-9 border border-gray-400 rounded-[4px]"><i class="fa-solid fa-copy"></i>Copy</button>
+                    <button class="w-1/3 h-9 bg-green-400 rounded-[4px]"><i class="fa-solid fa-phone"></i>Call</button>
+                </div>
+            </div>
+            <div class="border-2 border-amber-500 h-80"></div>
+            <div class="border-2 border-amber-500 h-80"></div>
+            <div class="border-2 border-amber-500 h-full row-span-3"></div>
+            <div class="border-2 border-amber-500 h-80"></div>
+            <div class="border-2 border-amber-500 h-80"></div>
+            <div class="border-2 border-amber-500 h-80"></div>
+            <div class="border-2 border-amber-500 h-80"></div>
+            <div class="border-2 border-amber-500 h-80"></div>
+            <div class="border-2 border-amber-500 h-80"></div>
+        </div>
+    </div>
 </body>
 </html>
