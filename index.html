@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"/>
 </head>
 <body class=>
-    <nav class="flex h-24 justify-between items-center mx-16 max-sm:m-0 max-sm:flex-col">
+    <!-- Navbar -->
+    <nav class="flex h-24 justify-between items-center mx-16 max-sm:m-0 max-sm:flex-col max-sm:mb-5">
         <div class="flex justify-between items-center w-48 h-12 max-sm:my-2">
             <img class="w-1/4" src="./assets/logo.png" alt="bangladesh-logo">
             <h3 class="text-[#006747] text-xl font-bold">Emergency Service</h3>
@@ -31,21 +32,24 @@
             </div>
         </div>
     </nav>
-    <div class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] h-80">
+
+    <!-- Banner section -->
+    <div class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] h-80 max-sm:h-90">
         <div class="pt-10">
             <div class="mx-auto">
                 <img class="w-24 h-24 mx-auto" src="./assets/logo.png" alt="logo">
             </div>
             <br>
             <div class="text-center text-white">
-                <h1 class="font-bold text-5xl">Emergency Service Directory</h1>
+                <h1 class="font-bold text-5xl max-sm:text-4xl">Emergency Service Directory</h1>
                 <br>
-                <p class="font-semibold text-xl">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+                <p class="font-semibold text-xl max-sm:text-[16px]">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
             </div>
         </div>
     </div>
+    <!-- cards section -->
     <div class="bg-green-50">
-        <div class="grid grid-cols-4 gap-6 p-8">
+        <div class="grid grid-cols-4 gap-6 p-8 max-sm:grid-cols-1">
             <div class="h-85 bg-white rounded-xl shadow-xl">
                 <div class="p-8">
                     <div class="flex justify-between items-center">
@@ -103,7 +107,15 @@
                     <button class="w-49/100 h-9 bg-green-400 rounded-[4px]"><i class="fa-solid fa-phone"></i>Call</button>
                 </div>
             </div>
-            <div class="border-2 border-amber-500 h-full row-span-3"></div>
+            <div class="h-full row-span-3 bg-white shadow-xl max-sm:-order-1">
+                <div class="flex justify-between p-5">
+                    <div class="flex items-center">
+                    <i class="fa-regular fa-clock"></i>
+                    <h1>Call History</h1>
+                    </div>
+                    <button class="bg-[#00A63E] text-white w-20 h-10 rounded-3xl">Clear</button>
+                </div>
+            </div>
             
             <div class="h-85 bg-white rounded-xl shadow-xl">
                 <div class="p-8">
