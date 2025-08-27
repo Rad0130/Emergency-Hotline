@@ -57,3 +57,24 @@ for(const call of calls){
         }
     )
 }
+
+
+const copyButtons=document.querySelectorAll('.copy-button');
+const copies=document.getElementById('copy-count')
+let numberOfCopies=parseInt(copies.innerText)
+
+for(const copy of copyButtons){
+    copy.addEventListener('click',
+        function(){
+            const numberToCopy=copy.parentElement.querySelector('h2').innerText
+            if(navigator.clipboard){
+                    navigator.clipboard.writeText(numberToCopy)
+                    .then(()=>{
+                        alert('Number is copied')
+                    });
+                };
+            numberOfCopies+=1
+            copies.innerText=numberOfCopies
+        }
+    )
+}
