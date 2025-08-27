@@ -20,6 +20,11 @@
             height: 70px;
             padding: 12px;
         }
+        @media screen and (max-width: 600px){
+            .inner-history{
+                height: 82px;
+            }
+        }
     </style>
 </head>
 <body class=>
@@ -61,7 +66,7 @@
     <!-- cards section -->
     <div class="bg-green-50">
         <div class="grid grid-cols-4 gap-6 p-8 max-sm:grid-cols-1">
-            <div class="h-85 bg-white rounded-xl shadow-xl">
+            <div class="h-85 bg-white rounded-xl shadow-xl max-sm:h-90">
                 <div class="p-8">
                     <div class="flex justify-between items-center">
                         <div class="w-16 h-16 bg-[#FFE3E2] rounded-xl flex justify-center items-center">
@@ -115,7 +120,7 @@
                     <h6 class="bg-[#F2F2F2] w-14 h-9 text-center py-1 rounded-3xl">Fire</h6>
                     <br>
                     <button class="copy-button w-49/100 h-9 border border-gray-400 rounded-[4px] cursor-pointer"><i class="fa-solid fa-copy"></i>Copy</button>
-                    <button class="copy-button call-button w-49/100 h-9 bg-green-400 rounded-[4px] cursor-pointer"><i class="fa-solid fa-phone"></i>Call</button>
+                    <button class="call-button w-49/100 h-9 bg-green-400 rounded-[4px] cursor-pointer"><i class="fa-solid fa-phone"></i>Call</button>
                 </div>
             </div>
             <div class="h-full row-span-3 bg-white shadow-xl max-sm:-order-1" id="history">
@@ -223,7 +228,7 @@
                     <button class="call-button w-49/100 h-9 bg-green-400 rounded-[4px] cursor-pointer"><i class="fa-solid fa-phone"></i>Call</button>
                 </div>
             </div>
-            <div class="h-85 bg-white rounded-xl shadow-xl">
+            <div class="h-85 bg-white rounded-xl shadow-xl max-sm:h-90">
                 <div class="p-8">
                     <div class="flex justify-between items-center">
                         <div class="w-16 h-16 bg-[#FFE3E2] rounded-xl flex justify-center items-center">
