@@ -11,3 +11,49 @@ for(const heart of heartIcons){
     )
 }
 
+
+const calls=document.querySelectorAll('.call-button');
+const coins=document.getElementById('coins');
+let numberOfCoins=parseInt(coins.innerText);
+for(const call of calls){
+    call.addEventListener('click',
+        function(){
+            const serviceName=call.parentElement.querySelector('h1').innerText;
+            const number=call.parentElement.querySelector('h2').innerText;
+            if(numberOfCoins>0){
+                alert(serviceName+' '+number);
+                numberOfCoins-=20;
+                const historySection=document.querySelector('#history');
+                const childHistory=document.createElement('div');
+                childHistory.classList.add('inner-history');
+                const time=new Date();
+                let suf=''
+                if(time.getHours()<12){
+                    suf='AM'
+                }
+                else{
+                    suf='PM'
+                }
+                childHistory.innerHTML=
+                `<div>
+                <p>${serviceName}</p>
+                <p>${number}</p>
+                </div>
+                <p>
+                ${time.getHours()}:${time.getMinutes()}:${time.getSeconds()} ${suf}
+                </P>`;
+                historySection.appendChild(childHistory);
+                document.getElementById('clear').addEventListener('click',
+                    function(){
+                        childHistory.hidden=true
+                    }
+                )
+            }
+            else{
+                alert('There are not enough coins')
+                return
+            }
+            coins.innerText=numberOfCoins
+        }
+    )
+}
